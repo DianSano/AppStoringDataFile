@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity_main"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="245dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Please Enter Some Text"
+        app:layout_constraintBottom_toTopOf="@+id/editText"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintLeft_toLeftOf="@+id/activity_main"
+        app:layout_constraintRight_toRightOf="@id/activity_main"
+        app:layout_constraintTop_toTopOf="@id/activity_main"
+        app:layout_constraintVertical_bias="0.28" />
+    <EditText
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:inputType="textMultiLine"
+        android:ems="10"
+        app:layout_editor_absoluteY="82dp"
+        android:id="@+id/editText"
+        app:layout_constraintLeft_toLeftOf="@id/activity_main"
+        app:layout_constraintRight_toRightOf="@id/activity_main"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:layout_marginTop="136dp"/>
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        app:layout_constraintLeft_toLeftOf="@id/activity_main"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editText"
+        android:layout_marginTop="136dp"
+        app:layout_constraintRight_toRightOf="@id/activity_main"
+        android:layout_marginRight="16dp"
+        android:onClick="onClickSave"/>
+    <Button
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:text="Load"
+        android:id="@+id/btnLoad"
+        app:layout_constraintLeft_toLeftOf="@id/activity_main"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editText"
+        android:layout_marginTop="48dp"
+        app:layout_constraintRight_toRightOf="@id/activity_main"
+        android:layout_marginRight="16dp"
+        android:onClick="onClickLoad"/>
+
+</android.support.constraint.ConstraintLayout>
